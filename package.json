@@ -1,0 +1,25 @@
+{
+  "name": "htn-2021",
+  "version": "1.0.0",
+  "description": "## Build/Running To start the React app, go to the client folder (`cd client`) and run `npm run start`",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server",
+    "build": "cd client/ && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leungjch/htn-2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leungjch/htn-2021/issues"
+  },
+  "homepage": "https://github.com/leungjch/htn-2021#readme"
+}
