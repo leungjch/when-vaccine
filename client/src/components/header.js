@@ -1,10 +1,9 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from "react-router-dom";
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import logo from '../assets/logo2.png';
 
 import "../styles/header.css";
-
 
 function Header() {
     return (
@@ -15,7 +14,7 @@ function Header() {
                         pathname: "/",
                     }}
                 >
-                    <p className="website-name">When Vaccine?</p>    
+                    <img className="logo" src={logo} />
                 </Link>
             </div>
             <div className="links">
@@ -31,19 +30,19 @@ function Header() {
                 <div className="link-container">
                     <Link 
                         to={{
-                            pathname: "/about",
+                            pathname: "/data",
                         }}
                     >
-                        <p className="website-link">About</p>    
+                        <p className="website-link">Data</p>    
                     </Link>
                 </div>
                 <div className="link-container">
                     <Link 
                         to={{
-                            pathname: "/data",
+                            pathname: "/about",
                         }}
                     >
-                        <p className="website-link">Data</p>    
+                        <p className="website-link">About</p>    
                     </Link>
                 </div>
             </div>

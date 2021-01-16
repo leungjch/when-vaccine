@@ -1,4 +1,6 @@
 import React from 'react';
+
+import logo from '../assets/logo2.png';
 import "../styles/about.css";
 
 function About() {
@@ -6,7 +8,7 @@ function About() {
     return (
         <div className="about-container">
             <div className="title-area">
-                <p className="title">About "When Vaccine?"</p>
+                <h1 class="title"> About "When Vaccine?"</h1>
             </div>
             <div className="about-text-area">
                 <p className="text">
@@ -15,10 +17,13 @@ function About() {
                 <p className="text">
                     Unfortunately, it is extremely difficult to get an answer to this question. For this reason, we have created "When Vaccine?". 
                     With our advanced algorithms, information from the Government of Ontario, and past data from other users, we can accurately predict
-                    the month where you will get your vaccine. 
+                    the month when you will get your vaccine. 
                 </p>
+
+                <img className="page-image" src={logo} />
+
                 <p className="text">
-                    Disclaimer: Your responses will be stored to increase the accuracy of our algorithm. However, no identifying information will be stored in 
+                    <b>Disclaimer:</b> Your responses will be stored to increase the accuracy of our algorithm. However, no identifying information will be stored in 
                     our database. 
                 </p>
             </div>

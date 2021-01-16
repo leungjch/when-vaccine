@@ -1,12 +1,13 @@
 import React from 'react';
 import "../styles/home.css";
 import SurveyForm from '../components/surveyForm'
+
 function Home() {
 
     return (
-        <div>
-        <h1>When Vaccine</h1> 
-        <div style={{width:"100%", marginLeft:"10em"}}>
+        <div style={{fontFamily: "Montserrat"}}>
+        <h1 className="title">When Vaccine &#128137;</h1> 
+        <div style={{width:"100%"}}> {/*removed margin-left: 10em*/}
             <SurveyForm />
         </div>
 

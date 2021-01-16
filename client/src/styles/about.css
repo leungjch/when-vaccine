@@ -1,6 +1,7 @@
 .about-container {
-    padding: 100px 250px;
+    padding: 0px 250px;
     align-items:center;
+    font-family: montserrat;
 }
 
 @media (max-width: 1000px) {
@@ -26,8 +27,7 @@
 }
 
 .title {    
-    padding: 10px;
-    font-size: 30px;
+    margin: 30px;
     color: #000;
 }
 
@@ -35,8 +35,10 @@
     text-align: center;
 }
 
-
-
-.text {
-
+.page-image {
+    width: 70px;
+    height: 70px;
+    margin: 25px 0px;
 }
+
+.text {}

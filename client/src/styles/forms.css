@@ -1,0 +1,25 @@
+.form-container {
+    padding: 0px 250px;
+}
+
+@media (max-width: 1000px) {
+    .form-container {
+        padding: 75px 175px;
+    }
+}
+
+@media (max-width: 666px) {
+    .form-container {
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .form-container {
+        padding: 50px 50px;
+    }
+}
+
+Form {
+    margin: 0px auto;
+}
