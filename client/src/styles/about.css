@@ -1,0 +1,42 @@
+.about-container {
+    padding: 100px 250px;
+    align-items:center;
+}
+
+@media (max-width: 1000px) {
+    .about-container {
+        padding: 75px 175px;
+    }
+}
+
+@media (max-width: 666px) {
+    .about-container {
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-container {
+        padding: 50px 50px;
+    }
+}
+
+.title-area {
+    align-items: center;
+}
+
+.title {    
+    padding: 10px;
+    font-size: 30px;
+    color: #000;
+}
+
+.about-text-area {
+    text-align: center;
+}
+
+
+
+.text {
+
+}

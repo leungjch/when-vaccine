@@ -1,9 +1,20 @@
 import React from 'react';
 
-import { Form } from 'react-bootstrap'
+import { Row, Col Form } from 'react-bootstrap'
 
 function SurveyForm() {
     
+
+
+    const onFormSubmit = e => {
+        e.preventDefault()
+        const formData = new FormData(e.target),
+              formDataObj = Object.fromEntries(formData.entries())
+        console.log(formDataObj)
+      }
+
+
+
     return(
     <Form>
     {['checkbox', 'radio'].map((type) => (

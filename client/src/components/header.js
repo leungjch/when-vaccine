@@ -3,45 +3,47 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from "react-router-dom";
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
+import "../styles/header.css";
+
 
 function Header() {
     return (
         <div className="nav-container ">
-            <div className="row">
-                <div className="col-md-3 text-center my-auto">
+            <div className="website-name-container">
+                <Link 
+                    to={{
+                        pathname: "/",
+                    }}
+                >
+                    <p className="website-name">When Vaccine?</p>    
+                </Link>
+            </div>
+            <div className="links">
+                <div className="link-container">
                     <Link 
                         to={{
                             pathname: "/",
                         }}
                     >
-                        <h4 className="website-name">When Vaccine?</h4>    
+                        <p className="website-link">Home</p>    
                     </Link>
                 </div>
-                <div className="col-1 text-center my-auto">
-                    <Link 
-                        to={{
-                            pathname: "/",
-                        }}
-                    >
-                        <p className="website-name">Home</p>    
-                    </Link>
-                </div>
-                <div className="col-1 text-center my-auto">
+                <div className="link-container">
                     <Link 
                         to={{
                             pathname: "/about",
                         }}
                     >
-                        <p className="website-name">About</p>    
+                        <p className="website-link">About</p>    
                     </Link>
                 </div>
-                <div className="col-1 text-center my-auto">
+                <div className="link-container">
                     <Link 
                         to={{
                             pathname: "/data",
                         }}
                     >
-                        <p className="website-name">Data</p>    
+                        <p className="website-link">Data</p>    
                     </Link>
                 </div>
             </div>
