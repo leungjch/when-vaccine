@@ -87,7 +87,7 @@ function SurveyForm() {
         <Form.Group>
           <Form.Label> {/*removed  as="legend" column md={4} sm={4}*/}
           
-            What is your age?
+            <b>What is your age?</b>
           </Form.Label>
           <Form.Control
             column
@@ -106,7 +106,7 @@ function SurveyForm() {
         <br />
 
         <Form.Group controlId="exampleForm.ControlSelect1">
-          <Form.Label>What is your occupation?</Form.Label>
+          <Form.Label><b>What is your occupation?</b></Form.Label>
           <Form.Control as="select" name="occupation">
             {/* <option>Select an occupation...</option> */}
             <option>Caregiver</option>
@@ -122,7 +122,7 @@ function SurveyForm() {
 
         <Form.Group>
           <Form.Label> {/*removed as="legend" column sm={12}*/}
-              Do you live with anyone satisfying the following conditions?
+              <b>Do you live with anyone satisfying the following conditions?</b>
           </Form.Label>
           <Form.Group>
             <Form.Check
@@ -160,7 +160,7 @@ function SurveyForm() {
 
         <br />
 
-        <Form.Label>Check those that apply to you:</Form.Label>
+        <Form.Label><b>Check those that apply to you:</b></Form.Label>
           <Form.Group>
             <Form.Check
               type="checkbox"
@@ -185,7 +185,7 @@ function SurveyForm() {
         <br />
 
         <Form.Group controlId="exampleForm.ControlSelect1">
-          <Form.Label>What is your place of residence?</Form.Label>
+          <Form.Label><b>What is your place of residence?</b></Form.Label>
           <Form.Control as="select" name="residence"
           placeholder={"Select your place of residence..."}
           >
@@ -198,7 +198,7 @@ function SurveyForm() {
 
         <br />
 
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" style={{backgroundColor:"#e52e05", borderColor:"#e52e05"}}>
               Submit
         </Button>
 

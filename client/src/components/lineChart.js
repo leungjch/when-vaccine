@@ -21,10 +21,22 @@ export default class LineChart extends React.Component {
           labels: this.props.data.map(d => d.name),
           datasets: [{
             data: this.props.data.map(d => d.value),
-            backgroundColor: this.props.data.map(d => d.color),
+            backgroundColor: [
+              "rgba(75, 134, 180, 0.7)",
+              "rgba(75, 134, 180, 0.7)",
+              "rgba(75, 134, 180, 0.7)",
+              "rgba(75, 134, 180, 0.7)",
+              "rgba(75, 134, 180, 0.7)",
+              "rgba(75, 134, 180, 0.7)",
+              "rgba(75, 134, 180, 0.7)",
+              "rgba(75, 134, 180, 0.7)",
+              "rgba(75, 134, 180, 0.7)",
+              "rgba(75, 134, 180, 0.7)",
+              "rgba(75, 134, 180, 0.7)",
+              "rgba(75, 134, 180, 0.7)",
+            ],
             label: "Person count"
-          }],
-          backgroundColor: this.props.data.map(d => d.color)
+          }]
         }
       });
     }

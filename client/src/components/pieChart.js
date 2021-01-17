@@ -21,9 +21,15 @@ export default class DoughnutChart extends React.Component {
           labels: this.props.data.map(d => d.name),
           datasets: [{
             data: this.props.data.map(d => d.value),
-            backgroundColor: this.props.data.map(d => d.color)
+            backgroundColor: [
+              "rgba(42, 77, 105, 0.7)",
+              "rgba(75, 134, 180, 0.7)",
+              "rgba(173, 203, 227, 0.7)",
+              "rgba(231, 239, 246, 0.7)",
+              "rgba(99, 172, 229, 0.7)",
+              "rgba(99, 172, 229, 0.7)"
+            ]
           }],
-          backgroundColor: this.props.data.map(d => d.color)
         }
       });
     }

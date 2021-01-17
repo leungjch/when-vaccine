@@ -5,21 +5,24 @@ import { Link, Redirect, useHistory } from 'react-router-dom';
 function Result(props) {
     const [allData, setAllData] = useState([]);
     const [rank, setRank] = useState(0);
-    const [userData, setUserData] = useState({age: 25,
-        isBipoc: true,
-        isChronicIllness: true,
-        isConditions: false,
-        isHighRiskSetting: false,
-        isOlderThan60Years: false,
-        isReserve: true,
-        isRespiratoryIllness: true,
-        isYoungerThan2Years: true,
-        month: "January",
-        occupation: "Health care worker",
-        phase: "First",
-        residence: "Single home",
-        score: 83,
-        })
+    // const [userData, setUserData] = useState({
+    //     age: 25,
+    //     isBipoc: true,
+    //     isChronicIllness: true,
+    //     isConditions: false,
+    //     isHighRiskSetting: false,
+    //     isOlderThan60Years: false,
+    //     isReserve: true,
+    //     isRespiratoryIllness: true,
+    //     isYoungerThan2Years: true,
+    //     month: "January",
+    //     occupation: "Health care worker",
+    //     phase: "First",
+    //     residence: "Single home",
+    //     score: 83,
+    //     })
+
+    var userData = props.location.data
     console.log("Props is", props);
 
     const history = useHistory();
@@ -34,18 +37,21 @@ function Result(props) {
             getNum(data);
         }
         fetchData();
-        if (props.location.data !== null)
-        {
-            setUserData(props.location.data)
-        }
+        // if (props.location.data !== null)
+        // {
+        //     setUserData(props.location.data)
+        // }
 
     }, []);
     function getNum(data) {
-        let temp = 0;
+        console.log("Data is", data)
+        let temp = 1;
         var currentData = data;
+        var score = userData['score'];
         for (let val of currentData) {
             var entry = val.score;
-            if (entry >= userData['score']) {
+            if (entry >= score) {
+                console.log("Adding temp")
                 temp += 1;
             }
         }
@@ -60,7 +66,7 @@ function Result(props) {
             <h3 style={{fontFamily: "Montserrat"}}>You rank <b>{rank}</b> out of <b>{allData.length}</b> submissions.</h3>
             <br />
             <br />
-            <p>Result based on Ontario's <a href="https://files.ontario.ca/moh-covid-19-vaccine-technical-briefing-en-january-13-2021-2021-01-13.pdf"> COVID-19 Vaccination Update</a>. Results do not constitute confirmation of administration on the indicated date. </p>
+            <p>Result based on Ontario's COVID-19 Vaccination Update (Released January 13, 2021). Results do not constitute confirmation of administration on the indicated date. </p>
         </div>
     );
 }

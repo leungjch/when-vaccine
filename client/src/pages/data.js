@@ -82,18 +82,18 @@ function Data() {
         console.log("Counts is", counts)
 
         let ret = [
-            { name: "Jan", value: counts[0], color: "#4b86b4" },
-            { name: "Feb", value: counts[1], color: "#4b86b4" },
-            { name: "Mar", value: counts[2], color: "#4b86b4" },
-            { name: "Apr", value: counts[3], color: "#4b86b4" },
-            { name: "May", value: counts[4], color: "#4b86b4" },
-            { name: "Jun", value: counts[5], color: "#4b86b4" },
-            { name: "Jul", value: counts[6], color: "#4b86b4" },
-            { name: "Aug", value: counts[7], color: "#4b86b4" },
-            { name: "Sep", value: counts[8], color: "#4b86b4" },
-            { name: "Oct", value: counts[9], color: "#4b86b4" },
-            { name: "Nov", value: counts[10], color: "#4b86b4" },
-            { name: "Dec", value: counts[11], color: "#4b86b4" }
+            { name: "Jan", value: counts[0] },
+            { name: "Feb", value: counts[1] },
+            { name: "Mar", value: counts[2] },
+            { name: "Apr", value: counts[3] },
+            { name: "May", value: counts[4] },
+            { name: "Jun", value: counts[5] },
+            { name: "Jul", value: counts[6] },
+            { name: "Aug", value: counts[7] },
+            { name: "Sep", value: counts[8] },
+            { name: "Oct", value: counts[9] },
+            { name: "Nov", value: counts[10] },
+            { name: "Dec", value: counts[11] }
         ];
         console.log("Ret is", ret)
         setHistogramData(ret);
@@ -113,12 +113,12 @@ function Data() {
         for (let entry of currentData) {
             counts[entry.occupation] += 1;
         }
-        var ret = [{ "name": "Caregiver", "value": counts["Caregiver"], color: "#2a4d69" },
-        { "name": "Health care worker", "value": counts["Health care worker"], color: "#4b86b4" },
-        { "name": "Essential Worker", "value": counts["Essential Worker (first responders, teachers, food, construction...)"], color: "#adcbe3" },
-        { "name": "Work from home", "value": counts["Work from home"], color: "#e7eff6" },
-        { "name": "Student", "value": counts["Student"], color: "#63ace5" },
-        { "name": "Other", "value": counts["Other"], color: "#63ace5" },
+        var ret = [{ "name": "Caregiver", "value": counts["Caregiver"] },
+        { "name": "Health care worker", "value": counts["Health care worker"] },
+        { "name": "Essential Worker", "value": counts["Essential Worker (first responders, teachers, food, construction...)"] },
+        { "name": "Work from home", "value": counts["Work from home"] },
+        { "name": "Student", "value": counts["Student"] },
+        { "name": "Other", "value": counts["Other"] },
         ];
 
         setPieOccupationData(ret)
@@ -137,9 +137,9 @@ function Data() {
             counts[entry.residence] += 1;
         }
         var ret = [{ "name": "Congregate living", "value": counts["Congregate living (Senior homes, apartments, etc.)"], color: "#2a4d69" },
-        { "name": "Town home", "value": counts["Town home"], color: "#4b86b4" },
+        { "name": "Town home", "value": counts["Town home"] },
         { "name": "Single home", "value": counts["Single home"], color: "#adcbe3" },
-        { "name": "N/A", "value": counts["None of the above"], color: "#63ace5" },
+        { "name": "Other", "value": counts["None of the above"], color: "#63ace5" },
         ];
         console.log("Reisdences is", ret)
         setResidenceData(ret)
