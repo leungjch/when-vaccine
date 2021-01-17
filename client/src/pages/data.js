@@ -1,9 +1,14 @@
 import React from 'react';
 
+import "../styles/data.css";
+
 function Data() {
 
     return (
-        <h1 className="title">Data</h1>
+        <div className="data-container">
+            <h1 className="title">Data</h1>
+            
+        </div>
         
     );
 }

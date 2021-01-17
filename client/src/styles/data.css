@@ -1,0 +1,44 @@
+.data-container {
+    padding: 0px 250px;
+    align-items:center;
+    font-family: montserrat;
+}
+
+@media (max-width: 1000px) {
+    .data-container {
+        padding: 75px 175px;
+    }
+}
+
+@media (max-width: 666px) {
+    .data-container {
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .data-container {
+        padding: 50px 50px;
+    }
+}
+
+.title-area {
+    align-items: center;
+}
+
+.title {    
+    margin: 30px;
+    color: #000;
+}
+
+.data-text-area {
+    text-align: center;
+}
+
+.page-image {
+    width: 70px;
+    height: 70px;
+    margin: 25px 0px;
+}
+
+.text {}

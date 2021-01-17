@@ -30,9 +30,10 @@ async function mongoDB_insert(data) {
       const db = client.db(MONGO_DBNAME);
       const col = db.collection("mycollection");
 
+      
       // Create image documents from uploaded files
-
       console.log("Inserting into mongoDB", data)
+
       // Insert into DB
       const p = await col.insertOne(data);
   } catch (err) {
