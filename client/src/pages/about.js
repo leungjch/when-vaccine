@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from '../assets/logo2.png';
+import logo from '../assets/logov2.png';
 import "../styles/about.css";
 
 function About() {
@@ -26,7 +26,7 @@ function About() {
                     our database. 
                 </p>
                 <p className="text">
-                     To learn more about Ontario's COVID-19 Vaccination Update (Released January 13, 2021), refer to <a href="https://files.ontario.ca/moh-covid-19-vaccine-technical-briefing-en-january-13-2021-2021-01-13.pdf">here </a>
+                     To learn more about Ontario's COVID-19 Vaccination Update (Released January 13, 2021), refer to <a href="https://files.ontario.ca/moh-covid-19-vaccine-technical-briefing-en-january-13-2021-2021-01-13.pdf">here. </a>
                 </p>
             </div>
         </div>
