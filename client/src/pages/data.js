@@ -82,18 +82,18 @@ function Data() {
         console.log("Counts is", counts)
 
         let ret = [
-            { name: "Jan", value: counts[0], color: "#2a4d69" },
+            { name: "Jan", value: counts[0], color: "#4b86b4" },
             { name: "Feb", value: counts[1], color: "#4b86b4" },
-            { name: "Mar", value: counts[2], color: "#adcbe3" },
-            { name: "Apr", value: counts[3], color: "#e7eff6" },
-            { name: "May", value: counts[4], color: "#63ace5" },
-            { name: "Jun", value: counts[5], color: "#63ace5" },
-            { name: "Jul", value: counts[6], color: "#2a4d69" },
+            { name: "Mar", value: counts[2], color: "#4b86b4" },
+            { name: "Apr", value: counts[3], color: "#4b86b4" },
+            { name: "May", value: counts[4], color: "#4b86b4" },
+            { name: "Jun", value: counts[5], color: "#4b86b4" },
+            { name: "Jul", value: counts[6], color: "#4b86b4" },
             { name: "Aug", value: counts[7], color: "#4b86b4" },
-            { name: "Sep", value: counts[8], color: "#adcbe3" },
-            { name: "Oct", value: counts[9], color: "#63ace5" },
-            { name: "Nov", value: counts[10], color: "#63ace5" },
-            { name: "Dec", value: counts[11], color: "#2a4d69" }
+            { name: "Sep", value: counts[8], color: "#4b86b4" },
+            { name: "Oct", value: counts[9], color: "#4b86b4" },
+            { name: "Nov", value: counts[10], color: "#4b86b4" },
+            { name: "Dec", value: counts[11], color: "#4b86b4" }
         ];
         console.log("Ret is", ret)
         setHistogramData(ret);
@@ -136,7 +136,7 @@ function Data() {
         for (let entry of currentData) {
             counts[entry.residence] += 1;
         }
-        var ret = [{ "name": "Congregate living", "value": counts["Congregate living (Senior homes, apartments, etc.)"], color: "2a4d69" },
+        var ret = [{ "name": "Congregate living", "value": counts["Congregate living (Senior homes, apartments, etc.)"], color: "#2a4d69" },
         { "name": "Town home", "value": counts["Town home"], color: "#4b86b4" },
         { "name": "Single home", "value": counts["Single home"], color: "#adcbe3" },
         { "name": "N/A", "value": counts["None of the above"], color: "#63ace5" },

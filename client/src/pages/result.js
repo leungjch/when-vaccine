@@ -55,7 +55,7 @@ function Result(props) {
     return(
         <div className="result-container">
             <br />
-            <h1 style={{fontFamily: "Montserrat"}}> Your estimated vaccination date is in {userData['month']}, 2021 ({userData['phase']} phase)! </h1>
+            <h1 style={{fontFamily: "Montserrat"}}> Your estimated vaccination date is in <b>{userData['month']}</b>, 2021 (<b>{userData['phase']}</b> phase)! </h1>
             <br />
             <h3 style={{fontFamily: "Montserrat"}}>You rank <b>{rank}</b> out of <b>{allData.length}</b> submissions.</h3>
             <br />
@@ -64,7 +64,6 @@ function Result(props) {
         </div>
     );
 }
-
 // loop through mongo score +1 for each score greater than submitted score to get rank
 
 export default Result;
