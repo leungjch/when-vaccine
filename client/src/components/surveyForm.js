@@ -5,12 +5,12 @@ import { getPlacement } from "../helper/algorithm.js"
 
 import { Row, Col, Form, Button } from "react-bootstrap";
 
-function SurveyForm() {
-  
-  const printResult = (result) => {
-    // console.log(result);
+import { useHistory } from "react-router-dom";
 
-  }
+
+function SurveyForm() {
+
+  const history = useHistory();
 
   const onFormSubmit = (event) => {
     event.preventDefault();
@@ -66,7 +66,11 @@ function SurveyForm() {
     });
     console.log(cleanData);
 
-    printResult(placementResult);
+    // Redirect user to results page
+    history.push({
+      pathname: '/result',
+      data: cleanData // your data array of objects
+    });
   }
   
   return (
@@ -75,7 +79,7 @@ function SurveyForm() {
       onSubmit = {onFormSubmit}
       >
         <Form.Label as="legend"> {/*removed column sm{12}*/}
-          Fill out the following form to get an estimate for when you can receive the vaccine in Ontario:
+          Fill out the following form to find out when you can receive the vaccine in Ontario:
         </Form.Label>
 
         <br />
@@ -94,7 +98,8 @@ function SurveyForm() {
             id="formNumber"
             max="140"
             min="0"
-            placeholder="18"
+            defaultValue="18"
+            // placeholder="18"
           />
         </Form.Group>
 
@@ -103,7 +108,7 @@ function SurveyForm() {
         <Form.Group controlId="exampleForm.ControlSelect1">
           <Form.Label>What is your occupation?</Form.Label>
           <Form.Control as="select" name="occupation">
-            <option>Select an occupation...</option>
+            {/* <option>Select an occupation...</option> */}
             <option>Caregiver</option>
             <option>Health care worker</option>
             <option>Essential Worker (first responders, teachers, food, construction...)</option>
@@ -165,13 +170,13 @@ function SurveyForm() {
             />
             <Form.Check
               type="checkbox"
-              label="I identify as BIPOC"
+              label="I identify as BIPOC (black, Indigenous, or person of colour)"
               name="bipoc"
               id="bipoc"
             />
             <Form.Check
               type="checkbox"
-              label="I am an on-reserve first nation resident"
+              label="I am an on-reserve First ation resident"
               name="onReserve"
               id="firstNation"
             />

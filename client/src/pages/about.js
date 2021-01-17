@@ -4,7 +4,6 @@ import logo from '../assets/logo2.png';
 import "../styles/about.css";
 
 function About() {
-
     return (
         <div className="about-container">
             <div className="title-area">

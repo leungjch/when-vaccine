@@ -6,7 +6,7 @@ function Home() {
 
     return (
         <div style={{fontFamily: "Montserrat"}}>
-        <h1 className="title">When Vaccine &#128137;</h1> 
+        <h1 className="title">When Vaccine &#128137;&#8265;&#65039;</h1> 
         <div style={{width:"100%"}}> {/*removed margin-left: 10em*/}
             <SurveyForm />
         </div>

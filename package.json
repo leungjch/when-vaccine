@@ -4,6 +4,7 @@
   "description": "## Build/Running To start the React app, go to the client folder (`cd client`) and run `npm run start`",
   "main": "index.js",
   "dependencies": {
+    "chart.js": "^2.9.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongodb": "^3.6.3"
