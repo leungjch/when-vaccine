@@ -57,7 +57,7 @@ function Data() {
             else if (entry == 'May') {
                 counts[4] += 1
             }
-            else if (entry == 'June') {
+            else if (entry == 'Jun') {
                 counts[5] += 1
             }
             else if (entry == 'July') {
