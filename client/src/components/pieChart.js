@@ -16,13 +16,14 @@ export default class DoughnutChart extends React.Component {
   
     componentDidMount() {
       this.myChart = new Chart(this.chartRef.current, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
-          labels: this.props.data.map(d => d.label),
+          labels: this.props.data.map(d => d.name),
           datasets: [{
             data: this.props.data.map(d => d.value),
-            backgroundColor: this.props.colors
-          }]
+            backgroundColor: this.props.data.map(d => d.color)
+          }],
+          backgroundColor: this.props.data.map(d => d.color)
         }
       });
     }

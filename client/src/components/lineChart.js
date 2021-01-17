@@ -21,7 +21,8 @@ export default class LineChart extends React.Component {
           labels: this.props.data.map(d => d.name),
           datasets: [{
             data: this.props.data.map(d => d.value),
-            backgroundColor: this.props.colors
+            backgroundColor: this.props.data.map(d => d.color),
+            label: "Person count"
           }]
         }
       });

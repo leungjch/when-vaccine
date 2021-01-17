@@ -16,26 +16,27 @@ export default class  DonutChart extends React.Component {
   
     componentDidMount() {
       this.myChart = new Chart(this.chartRef.current, {
-        type: 'line',
-        options: {
-          scales: {
-            xAxes: [
-              {
-                type: 'time',
-                time: {
-                  unit: 'week'
-                }
-              }
-            ],
-            yAxes: [
-              {
-                ticks: {
-                  min: 0
-                }
-              }
-            ]
-          }
-        },
+        // options: {
+        //   scales: {
+        //     xAxes: [
+        //       {
+        //         type: 'time',
+        //         time: {
+        //           unit: 'week'
+        //         }
+        //       }
+        //     ],
+        //     yAxes: [
+        //       {
+        //         ticks: {
+        //           min: 0
+        //         }
+        //       }
+        //     ]
+        //   }
+        // },
+        type: 'doughnut',
+
         data: {
           labels: this.props.data.map(d => d.time),
           datasets: [{
