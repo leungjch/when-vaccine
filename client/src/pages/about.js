@@ -8,7 +8,7 @@ function About() {
     return (
         <div className="about-container">
             <div className="title-area">
-                <h1 class="title"> About "When Vaccine?"</h1>
+                <h1 className="title"> About "When Vaccine?"</h1>
             </div>
             <div className="about-text-area">
                 <p className="text">

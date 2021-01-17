@@ -5,7 +5,7 @@ A web app allowing users to recieve an estimated date for receiving the COVID-19
 ## Build/Running
 
 ### Start the server
-To start the backend, run `npm run start` in the root of the directory.
+To start the backend, run `npm install` in the root of the directory. Afterwards, run `npm run start` to get the back end started!
 
 ### Start the client
-To start the React app, go to the client folder (`cd client`) and run `npm run start`
+To start the React app, go to the client folder (`cd client`) and run `npm install` to install all dependencies. Run `npm run start` to start the client!
