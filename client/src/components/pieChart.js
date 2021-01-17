@@ -23,7 +23,7 @@ export default class DoughnutChart extends React.Component {
             data: this.props.data.map(d => d.value),
             backgroundColor: this.props.data.map(d => d.color)
           }],
-          // backgroundColor: this.props.data.map(d => d.color)
+          backgroundColor: this.props.data.map(d => d.color)
         }
       });
     }
